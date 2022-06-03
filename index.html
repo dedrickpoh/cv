@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dedrick's Personal Site</title>
+  </head>
+  <body>
+    <h1>Dedrick</h1>
+    <h2><em>Product Management Associate at <strong>Shopee</strong></em></h2>
+    <p>This is my first job after graduating with Honors in Chemical and Biomolecular
+      Engineering at Nanyang Technological University.</p>
+    <p>Nice to meet you!</p>
+    <hr>
+    <h3>Education</h3>
+    <table border="0" cellspacing = "10"> <!-- html border attribute is deprecated (not recommended) because table formatting should use CSS instead -->
+      <thead>
+        <tr>
+          <td><strong>Date</strong></td>
+          <td><strong>Experience</strong></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>November 2021 - May 2022</td>
+          <td>FlexiMasters in Business Finance, Nanyang Technological University
+            <ul>
+              <li>Financial Management, Accoutning Statement Analysis, Investment, International Economics & Finance, Fintech & Sustainable Finance</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>August 2017 - June 2021</td>
+          <td>B.Eng.(Hons) Chemical and Biomolecular Engineering, Nanyang Technological University <strong><em>(Highest Distinction)</em></strong>
+            <ul>
+              <li>Awarded the Profession Engineers Board Scholarship in AY2019/20 & AY2020/21</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- table foot is like table header but at the bottom, can be used for things like displaying "Total"-->
+      </tfoot>
+    </table>
+<!--
+    <ul>
+      <li>FlexiMasters in Business Finance, Nanyang Technological University</li>
+        <ul>
+          <li>Financial Management</li>
+          <li>Accounting Statement Analysis</li>
+          <li>Investment</li>
+          <li>International Economics & Finance</li>
+          <li>Fintech & Sustainable Finance</li>
+        </ul>
+      <li>B.Eng.(Hons) Chemical and Biomolecular Engineering, Nanyang Technological University <strong><em>(Highest Distinction)</em></strong></li>
+        <ul>
+          <li>Awarded the Profession Engineers Board Scholarship in AY2019/20 & AY2020/21</li>
+        </ul>
+    </ul>
+  -->
+    <h3>Hobbies</h3>
+    <ol>
+      <li><a href="Sports.html">Sports</a></li> <!-- Insert the file name in href to re-direct to another webpage in the same website -->
+      <li><a href="Reading.html">Reading</a></li>
+      <li><a href="Investment.html">Investment</a></li>
+    </ol>
+    <h3>IT Skills</h3>
+    <table> <!-- table nesting allows formatting of individual cells within a main table (e.g. cellspacing).
+      H/ever, it is deprecated and CSS formatting is recommended instead -->
+      <tr>
+        <td><table cellspacing = "10"> <!-- nest 1 in table cell 1 -->
+          <tr>
+            <td>Microsoft Excel</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Microsoft PowerPoint</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Microsoft Word</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+        </table></td>
+        <td><table cellspacing = "10"> <!-- nest 2 in table cell 2 -->
+          <tr>
+            <td>Python</td>
+            <td>⭐</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td>⭐</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    <h3>Contact</h3>
+<!--<ul>
+      <li><a href="Contact.html">Contact information</a></li>
+    </ul> -->
+    <p>Email: dedrickpoh@outlook.com</p>
+    <p>Mobile: +65-9018-2261</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dedrick-kai-kiat-poh-9494b370/">Dedrick's Profile</a></p>
+    <!-- paste the url directly in href if user should be re-directed to an external website-->
+
+  <form class="" action="mailto:dedpohkk@yahoo.com.sg" method="post" enctype="text/plain"> <!-- "action" should contain the url that processes the form,
+    "enctype" set as text/plain removes weird characters in the form output -->
+    <label for="name">Your Name:</label> <!-- setting "for" to match the "id" in <input> associates the label
+      with the input (e.g if user accidentally click the label text instead of the input field, they can start typing too) -->
+    <input id="name" type="text" name="Name:" value="">
+    <br>
+    <label>Your Email: <!-- nesting <input> inside <label> also allows association of both elements-->
+      <input type="email" name="Email" value=""></label> <!-- setting "type" as email allows
+        browser to do basic email validations on user input -->
+    <br>
+    <label>Your Message:</label>
+    <textarea name="Message" rows="8" cols="80"></textarea>
+    <br>
+    <input type="submit" name="">
+  </body>
+</html>
